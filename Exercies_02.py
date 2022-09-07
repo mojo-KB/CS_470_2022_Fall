@@ -25,6 +25,9 @@ image[:100,:] = (0,0,255)
 image[100:200,:] = 128
 #image[:,:,0:,1] = 128
 
+myimage = cv2.resize(myimage, dsize=(0,0), fx=0.1, fy=0.1)
+myimage = cv2.resize(myimage, dsize=(0,0), fx=10.0, fy=10.0, interpolation=cv2.INTER_NEAREST)
+
 cv2.imshow("Image", image)
 cv2.imshow("Image2", myimage);
 cv2.waitKey(-1)
