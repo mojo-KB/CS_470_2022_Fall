@@ -60,7 +60,7 @@ def main():
         # Webcam
         print("Opening webcam...")
 
-        camera = cv2.VideoCapture(2, cv2.CAP_DSHOW) # CAP_DSHOW recommended on Windows
+        camera = cv2.VideoCapture(0) # CAP_DSHOW recommended on Windows
 
         # Did we get it?
         if not camera.isOpened():
